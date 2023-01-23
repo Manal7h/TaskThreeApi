@@ -13,7 +13,7 @@ public class ThreeApi {
 		
 		System.out.println("3. Read From Sections Api :");
 		
-		
+		System.out.println("4. Insert into Authors Table :");
 		
 	}
 	
@@ -46,6 +46,10 @@ public class ThreeApi {
 			case 3:
 				SectionsApi.SectionsApi();
 				break;
+				
+			case 4:
+				AuthorsInsert.AuthorsInsert();
+				break;	
 				
 				
 				

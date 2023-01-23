@@ -26,15 +26,16 @@ public class AuthorsApi {
 //	    System.out.println("API JSON :" +response.body());
 	    String uglyJsonString=response.body();
 	    
-	    
-	    
-	    
-	    
+	   
 	    Gson gson = new GsonBuilder().setPrettyPrinting().create();//
 		JsonParser jsonParser = new JsonParser();
 		JsonElement jsonElement = jsonParser.parse(uglyJsonString);
 		String jsonString = gson.toJson(jsonElement);
 		System.out.println(jsonString);
+		
+		
+		
+		
 		
 		
 		
