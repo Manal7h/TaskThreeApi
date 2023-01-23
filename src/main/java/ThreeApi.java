@@ -9,6 +9,10 @@ public class ThreeApi {
 		
 		System.out.println("1. Read From Authors Api :");
 		
+		System.out.println("2. Read From Articals Api :");
+		
+		System.out.println("3. Read From Sections Api :");
+		
 		
 		
 	}
@@ -34,6 +38,17 @@ public class ThreeApi {
 			case 1:
 				AuthorsApi.AuthorsApi();
 				break;
+				
+			case 2:
+				ArticalsApi.ArticalsApi();
+				break;
+				
+			case 3:
+				SectionsApi.SectionsApi();
+				break;
+				
+				
+				
 		
 
 			}	
