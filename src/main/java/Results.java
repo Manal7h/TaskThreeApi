@@ -16,6 +16,8 @@ public class Results {
 	
 	
 	
+	
+	
 	public String getList_name() {
 		return list_name;
 	}
