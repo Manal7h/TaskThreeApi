@@ -17,6 +17,8 @@ public class ThreeApi {
 		
 		System.out.println("5. Insert into Articals Table :");
 		
+		System.out.println("6. Insert into Sections Table :");
+		
 	}
 	
 	
@@ -25,7 +27,7 @@ public class ThreeApi {
 	
 	
 	
-	public static void main(String[] args) throws IOException, InterruptedException {
+	public static void main(String[] args) throws Exception {
 		
 		
 		Scanner sc = new Scanner(System.in);
@@ -56,6 +58,10 @@ public class ThreeApi {
 			case 5:
 				ArticalsInsert.ArticalsInsert();
 				break;	
+				
+			case 6:
+				SectionsInsert.SectionsInsert();
+				break;		
 				
 				
 				

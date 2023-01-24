@@ -39,10 +39,7 @@ public class ArticalsInsert {
 
 		ArticalsData ApiJson = gson.fromJson(jsonString, ArticalsData.class);// FOR ETCH
 
-		Connection con = null;
-		Driver driver = (Driver) Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
-		DriverManager.registerDriver(driver);
-		con = DriverManager.getConnection(url, user, pass);
+
 		for (Results x : ApiJson.results) {
 
 			String source = x.getSource();
@@ -53,7 +50,12 @@ public class ArticalsInsert {
 
 			String SQLqueryForInserting = "insert into Articals values('" + source + "' ,'" + section + "', '"
 					+ subsection + "','" + type + "' , '" + title + "' )";
-
+			
+		Connection con = null;
+		Driver driver = (Driver) Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
+		DriverManager.registerDriver(driver);
+		con = DriverManager.getConnection(url, user, pass);
+		
 			System.out.print(SQLqueryForInserting);
 
 			try {

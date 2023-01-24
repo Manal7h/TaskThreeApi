@@ -5,6 +5,10 @@ public class Docs {
 	String news_desk;
 	String section_name;
 	String subsection_name;
+	
+	
+	
+	
 	public String getSource() {
 		return source;
 	}
